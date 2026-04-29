@@ -1,0 +1,24 @@
+# gitignore for Data Ingestion Pipeline project
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+venv/
+*.log
+
+# Docker volumes
+postgres_data/
+
+# Airflow
+airflow/logs/**
+!airflow/logs/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
